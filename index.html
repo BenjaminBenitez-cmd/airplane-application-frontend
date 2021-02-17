@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobya - Responsive Job Board HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        <!-- Tagline STart -->
+        <div class="tagline">
+            <div class="container">
+                <div class="float-left">
+                    <div class="phone">
+                        <i class="mdi mdi-phone-classic"></i> +1 800 123 45 67
+                    </div>
+                    <div class="email">
+                        <a href="#">
+                            <i class="mdi mdi-email"></i> Support@mail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <ul class="topbar-list list-unstyled d-flex" style="margin: 11px 0px;">
+                        <li class="list-inline-item"><a href="./candidates-profile.html"><i class="mdi mdi-account mr-2"></i>Benny Simpson</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Tagline End -->
+
+        <!-- Menu Start -->
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo-light.png" alt="" class="logo-light" height="18" />
+                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="18" />
+                </a>
+            </div>                 
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Status</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="./concurrency.html">Document Status</a></li>
+                            <li><a href="./notices.html">Notices</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="./create-resume.html">Application</a></span>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+        <!--end end-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <!-- Start home -->
+    <section class="bg-half page-next-level"> 
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center text-white">
+                        <h4 class="text-uppercase title mb-4">Available Jobs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+ 
+
+    <!-- JOB LIST START -->
+    <section class="section pt-0">
+        <div class="container">
+            <!-- <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title title-line pb-5">Available job for you</h4>
+                        <p class="text-muted para-desc mx-auto mb-1">Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-lg-12 mt-4 pt-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="show-results">
+                                <div class="float-left">
+                                    <h5 class="text-dark mb-0 pt-2 f-18">Showing results 0-20</h5>
+                                </div>
+                                <div class="sort-button float-right">
+                                    <select class="nice-select rounded">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="1">Web Developer</option>
+                                        <option value="2">PHP Developer</option>
+                                        <option value="3">Web Designer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-1.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">A220 Training Captain Candidates</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Avionco</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>Feb 2021</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos distinctio ipsum totam dolor, et voluptatem atque ad eius corporis quae quo corrupti quam! Mollitia fugit consectetur et obcaecati consequatur.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-2.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">B737NG Captains for China United Airlines</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>China United Airlines</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>Feb 2021</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos distinctio ipsum totam dolor, et voluptatem atque ad eius corporis quae quo corrupti quam! Mollitia fugit consectetur et obcaecati consequatur.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                               <span class="badge badge-success">Part-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-3.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">A320 Captains for Loong Air</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Loong Air</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>5 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore natus dolores beatae, autem deleniti velit. Pariatur tempore esse facere? Doloremque eaque minus voluptatum accusantium quo, neque natus iusto assumenda!</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-4.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">
+                                                    Recruiting B737 Captains on behalf of Spring Airlines Japan!</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Spring Airlines</p>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>7 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat saepe, culpa incidunt molestiae animi voluptatem. Amet, eaque sunt corporis adipisci in nesciunt saepe accusantium minus minima, facere aut ut nemo?</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-5.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">
+                                                    B737NG Captains for Okay Airways in China</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Okay Airways</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>8 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis, obcaecati officia similique consequatur laborum, beatae dolorem pariatur nisi et sapiente. Neque cumque in sapiente beatae iste iusto architecto obcaecati.</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                    <span class="badge badge-success">Part-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-6.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">CRJ 200/700/900 Captains – Newly relaxed minimums!</a></h6>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>China Express Airlines</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>10 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vitae iure dolorem unde eius maiores temporibus exercitationem maxime harum dolorum, fuga omnis, cum doloremque eos quibusdam molestiae nostrum ipsum tempore?</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination job-pagination mb-0 justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="mdi mdi-chevron-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="mdi mdi-chevron-double-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB LIST START -->
+
+     <hr>
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="">
+                        <p class="mb-0">© 2019 -2020 Jobya. Design with <i class="mdi mdi-heart text-danger"></i> by Themesdesign.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
